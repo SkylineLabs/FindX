@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="in.skylinelabs.digiPune.activity.No_SignUp">
+
+
+    <item
+        android:id="@+id/info"
+        android:title="Information"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_about_w"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/signup"
+        android:title="Sign Up"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_cc_bcc"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

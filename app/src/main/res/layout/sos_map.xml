@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/abc_action_bar_default_height_material"
+        android:background="?attr/colorPrimary"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:longClickable="false" />
+       <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+       android:layout_height="0dp"
+       android:layout_width="fill_parent"
+        android:layout_weight="0.6"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.4" >
+           
+             <TextView
+               android:id="@+id/textView3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/progressBar1"
+               android:layout_centerHorizontal="true"
+               android:text="Loading Map"
+               android:textAppearance="?android:attr/textAppearanceSmall"
+               android:textColor="@color/colortry" />
+
+           <ProgressBar
+               android:id="@+id/progressBar1"
+               style="?android:attr/progressBarStyle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/editText1"
+               android:layout_centerHorizontal="true"
+               android:textColor="#e91e63" />
+
+           <TextView
+               android:id="@+id/textView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"
+                  android:textColor="#e91e63"
+               android:text="Someone needs your help"
+               android:textAppearance="?android:attr/textAppearanceMedium" />
+
+           <Button
+               android:id="@+id/button1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentLeft="true"
+                android:textColor="#e91e63"
+               android:text="Call victim" />
+
+           <Button
+               android:id="@+id/button2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentRight="true"
+               android:textColor="#e91e63"
+               android:text="Navigate to victim" />
+
+       </RelativeLayout>
+   
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:background="@android:color/darker_gray"
+    android:layout_height="fill_parent">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        local:theme="@style/ThemeOverlay.AppCompat.Light"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_back"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/toolbar" >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:id="@+id/relativeLayout2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButtonCam"
+                    android:src="@drawable/ic_action_camera"
+                    android:onClick="loadImagefromGallery"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageLocation"
+                    android:src="@drawable/ic_action_location_found"
+                     android:layout_marginRight="35dp"
+                    android:layout_alignParentRight="true"
+                   />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/rel">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:background="#00000000"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Details (Location, description, etc)"
+                    android:gravity="top"
+                    android:id="@+id/editTextDescription"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/editTextTitle" />
+
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/editTextTitle"
+                    android:hint="Title"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="15dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#801565c0"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/editTextDescription"
+                    android:id="@+id/view1" />
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#801565c0"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/editTextTitle"
+                    android:id="@+id/view2" />
+
+
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Non-Anonymous"
+                    android:id="@+id/switchAn"
+                    android:gravity="center|right"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:layout_below="@+id/view1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentLeft="true" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    <ImageView
+        android:id="@+id/imgView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true">
+    </ImageView>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_action_accept"
+        fab:fab_colorNormal="@color/colorPrimary"
+        fab:fab_colorPressed="@color/colorPressed"
+        fab:fab_colorRipple="@color/colorRipple"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="uploadImage"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

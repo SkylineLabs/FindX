@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/drawer_layout"
+android:layout_width="match_parent"
+
+android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/pgb"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colortry" />
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/rel4"
+
+        xmlns:android1="http://schemas.android.com/apk/res/android">
+
+
+
+        <ScrollView
+            android1:id="@+id/scrollView1"
+            android1:layout_width="fill_parent"
+            android1:layout_height="fill_parent"
+            android1:layout_alignParentLeft="true"
+            android1:layout_alignParentTop="true" >
+
+            <RelativeLayout
+                android1:layout_width="fill_parent"
+                android1:layout_height="240dp"
+                android1:layout_alignParentBottom="true"
+                android1:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android1:id="@+id/textView"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_alignParentLeft="true"
+                    android1:layout_alignParentTop="true"
+                    android1:layout_marginLeft="29dp"
+                    android1:layout_marginTop="20dp"
+                    android1:text="App Settings"
+                    android:textColor="@color/colorPrimary"
+                    android1:textAppearance="?android:attr/textAppearanceLarge"
+                    />
+
+                <TextView
+                    android1:id="@+id/textView1"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_alignParentLeft="true"
+                    android1:layout_alignParentTop="true"
+                    android1:layout_marginLeft="29dp"
+                    android1:layout_marginTop="60dp"
+                    android1:text="Share Location"
+                    android1:textAppearance="?android:attr/textAppearanceMedium"
+                    />
+
+                <TextView
+                    android1:id="@+id/textViewonDuty"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_alignParentLeft="true"
+                    android1:layout_alignParentTop="true"
+                    android1:layout_marginLeft="29dp"
+                    android1:layout_marginTop="100dp"
+                    android1:text="On Duty"
+                    android1:textAppearance="?android:attr/textAppearanceMedium"
+                    />
+
+                <TextView
+                    android1:id="@+id/textView2"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_alignParentLeft="true"
+                    android1:layout_alignParentTop="true"
+                    android1:layout_marginLeft="29dp"
+                    android1:layout_marginTop="140dp"
+                    android1:text="Background update"
+                    android1:textAppearance="?android:attr/textAppearanceMedium"
+                     />
+
+                <TextView
+                    android1:id="@+id/textView3"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_alignParentLeft="true"
+                    android1:layout_alignParentTop="true"
+                    android1:layout_marginLeft="29dp"
+                    android1:layout_marginTop="180dp"
+                    android1:text="History"
+                    android1:textAppearance="?android:attr/textAppearanceMedium"
+                />
+                <TextView
+                    android1:id="@+id/textView4"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_alignParentLeft="true"
+                    android1:layout_alignParentTop="true"
+                    android1:layout_marginLeft="29dp"
+                    android1:layout_marginTop="220dp"
+                    android1:text="Location update"
+                    android1:textAppearance="?android:attr/textAppearanceMedium"
+                    />
+
+                <Switch
+                    android1:id="@+id/switch1"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_alignBaseline="@+id/textView1"
+                    android1:layout_alignBottom="@+id/textView1"
+                    android1:layout_alignParentRight="true" />
+
+
+                <Switch
+                    android1:id="@+id/switchonDuty"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_alignBaseline="@+id/textViewonDuty"
+                    android1:layout_alignBottom="@+id/textViewonDuty"
+                    android1:layout_alignParentRight="true" />
+
+                <Switch
+                    android1:id="@+id/switch4"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_alignBaseline="@+id/textView4"
+                    android1:layout_alignBottom="@+id/textView4"
+                    android1:layout_alignParentRight="true" />
+
+                <Switch
+                    android1:id="@+id/switch2"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_alignBaseline="@+id/textView2"
+                    android1:layout_alignBottom="@+id/textView2"
+                    android1:layout_alignParentRight="true" />
+
+                <Switch
+                    android1:id="@+id/switch3"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:layout_alignBaseline="@+id/textView3"
+                    android1:layout_alignBottom="@+id/textView3"
+                    android1:layout_alignParentRight="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#801565c0"
+                    android:layout_below="@+id/textView4"
+                    android:layout_margin="10dp"
+                    android:id="@+id/view" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android1:textAppearance="?android:attr/textAppearanceLarge"
+                   android:text="Select Your Category"
+                    android:id="@+id/textView13"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/view"
+                    android:layout_alignLeft="@+id/textView4"
+                    android:layout_alignStart="@+id/textView4" />
+
+                <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    android:entries="@array/category"
+                    android:prompt="@string/cat_prompt"
+                    android:layout_alignTop="@+id/textView13"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#801565c0"
+                    android:layout_below="@+id/textView13"
+                    android:layout_margin="10dp"
+                    android:id="@+id/view2" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android1:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Select location"
+                    android:id="@+id/textViewSelectLocation"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/view2"
+                    android:layout_alignLeft="@+id/textView4"
+                    android:layout_alignStart="@+id/textView4" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android1:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Home location"
+                    android:id="@+id/textViewSelectHome"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/textViewSelectLocation"
+                    android:layout_alignLeft="@+id/textView4"
+                    android:layout_alignStart="@+id/textView4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android1:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Work location"
+                    android:id="@+id/textViewSelectWork"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/textViewSelectHome"
+                    android:layout_alignLeft="@+id/textView4"
+                    android:layout_alignStart="@+id/textView4" />
+
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/redo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_replay"
+            fab:fab_colorNormal="@color/colorPrimary"
+            fab:fab_colorPressed="@color/colorPressed"
+            fab:fab_colorRipple="@color/colorRipple"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="24dp" />
+
+        <WebView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/webView2"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="239dp"
+            android:layout_marginStart="239dp" />
+
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        local:theme="@style/ThemeOverlay.AppCompat.Light"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+        <LinearLayout
+            android:id="@+id/search_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Settings"
+                android:textColor="@android:color/white"
+
+                android:padding="5dp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>
+
+
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/rel3"
+        android:background="@color/colorPrimaryDark"
+        xmlns:android1="http://schemas.android.com/apk/res/android">
+    </RelativeLayout>
+
+
+<fragment
+    android:id="@+id/fragment_navigation_drawer"
+    android:name="in.skylinelabs.digiPune.activity.FragmentDrawer"
+    android:layout_width="@dimen/nav_drawer_width"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    app:layout="@layout/navigation_drawer"
+    tools:layout="@layout/navigation_drawer" />
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

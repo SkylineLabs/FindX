@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ok">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Select action"
+                android:id="@+id/textView12"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wifi"
+                android:id="@+id/wifi_check"
+                android:checked="false"
+                android:layout_marginTop="64dp"
+                android:layout_below="@+id/textView12"
+                android:layout_centerHorizontal="true" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wifi_switch"
+                android:layout_below="@+id/wifi_check"
+                android:layout_centerHorizontal="true"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data"
+                android:id="@+id/data_check"
+                android:layout_below="@+id/wifi_switch"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:checked="false" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/data_switch"
+                android:layout_below="@+id/data_check"
+                android:layout_centerHorizontal="true"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silent Mode"
+                android:id="@+id/silent_check"
+                android:layout_below="@+id/data_switch"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:checked="false" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/silent_switch"
+                android:layout_below="@+id/silent_check"
+                android:layout_centerHorizontal="true"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notify favourites"
+                android:id="@+id/notify_check"
+                android:layout_below="@+id/silent_switch"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reminder"
+                android:id="@+id/reminder_check"
+                android:layout_below="@+id/notify_check"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:checked="false" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/reminder_editText"
+                android:layout_below="@+id/reminder_check"
+                android:layout_centerHorizontal="true" />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/ok"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+

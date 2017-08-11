@@ -1,5 +1,7 @@
 www.skylinelabs.in/FindX
 
+Refer : SkylineLabs_FindX_SmartCity_2.0.pdf
+
 Smart city platform developed under Pune city digital innitiatives.
 
 The application REST APIs point to PHPs on Skylinelabs.in; please change the server names as per requirement.
